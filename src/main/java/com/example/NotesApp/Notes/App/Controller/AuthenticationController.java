@@ -11,7 +11,10 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = {
+        "http://localhost:5173",
+        "https://my-notes-app-v1.netlify.app"
+})
 @RequestMapping("/api/auth")
 public class AuthenticationController {
 

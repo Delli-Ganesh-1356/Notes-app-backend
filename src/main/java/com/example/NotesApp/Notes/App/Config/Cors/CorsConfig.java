@@ -15,8 +15,8 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
                         .allowedOrigins(
-                                "http://localhost:5173", // for local dev
-                                "https://your-frontend-name.netlify.app" // replace with Netlify URL
+                                "http://localhost:5173", // local dev (React Vite)
+                                "https://my-notes-app-v1.netlify.app" // ✅ your real Netlify URL
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
